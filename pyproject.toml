@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "Weather_bot"
+version = "0.1.0"
+description = "This project helps you to get the current weather for the requested location through WhatsApp."
+authors = ["Vaijanath Birajdar <vbb3004@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^3.0.2"
+openai = "^1.17.0"
+twilio = "^9.0.0"
+python-dotenv = "^1.0.1"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

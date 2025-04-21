@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: weather-bot
+    env: python
+    buildCommand: |
+      pip install poetry
+      poetry install
+    startCommand: poetry run python Weather_Bot/src/app.py
+    envVars:
+      - key: OPENAI_API_KEY
+        value: your-openai-key
+      - key: WEATHER_API_KEY
+        value: your-weatherapi-key
